@@ -45,7 +45,7 @@ const Contacts = () => {
         {CONTACT_CONTENT.description}
       </motion.p>
 
-      <motion.a href={`mailto:${CONTACT_CONTENT.email}`} className="text-2xl md:text-3xl font-medium mt-8" initial="hidden" whileInView="visible" custom={0.8} variants={textVariants}>
+      <motion.a href={`mailto:${CONTACT_CONTENT.email}`} className="text-lg md:text-3xl font-medium mt-8" initial="hidden" whileInView="visible" custom={0.8} variants={textVariants}>
         {CONTACT_CONTENT.email}
       </motion.a>
 
