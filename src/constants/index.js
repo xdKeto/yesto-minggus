@@ -52,11 +52,11 @@ export const EXPERIENCES = [
     title: "Project Based Frontend and Mobile Developer at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
     description: [
-      "Developing a client-specific learning management system (LMS), covering user needs analysis and key feature mapping.",
-      "Designing UI/UX focused on ease of navigation and intuitive interaction for enhanced user experience.",
-      "Using Flutter and Svelte to build high-performance, responsive, and efficient cross-platform apps.",
+      "Developing a client-specific LMS, including user needs analysis and feature mapping.",
+      "Designing UI/UX for intuitive navigation and improved user experience.",
+      "Building high-performance, responsive cross-platform apps with Flutter and Svelte.",
       "Integrating REST API to enhance functionality and ensure a smooth user experience.",
-      "Collaborating with a 5-member team to design system architecture based on client requirements, ensuring scalability and sustainability.",
+      "Collaborating with a 5-member team to design scalable and sustainable system architecture based on client requirements.",
     ],
   },
   
