@@ -33,7 +33,7 @@ export const PROJECTS = [
   },
   {
     name: "Stellaron Raiders",
-    description: "A simple Space Shooter game my friends and I built in Java for our 2nd-semester final project.",
+    description: "A Space Shooter game my friends and I built in Java for our 2nd-semester final project.",
     image: projects3,
     technologies: ["Java", "Object-Oriented Programming"],
   },
@@ -63,9 +63,9 @@ export const EXPERIENCES = [
 ];
 
 export const CONTACT_CONTENT = {
-  headline: "LET'S WORK ON SOMETHING GREAT",
+  headline: "IGNITE YOUR IDEAS.",
   description:
-    "I’m thrilled to work on projects that challenge the norm and make a real difference. Let’s create something innovative and extraordinary together.",
+    "I'm committed to working on impactful projects that push creative and innovative boundaries. Let's create something exceptional together.",
   email: "yestoya.lumenchristo@gmail.com",
   socialLinks: [
     {

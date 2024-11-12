@@ -37,7 +37,7 @@ const Contacts = () => {
       <h2 className="text-charcoal text-4xl md:text-6xl font-medium tracking-tight mb-10">Contact</h2>
       <div className="h-1 w-20 bg-charcoal mb-8"></div>
 
-      <motion.h3 className="text-falu text-5xl sm:text-6xl md:text-8xl leading-none font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" initial="hidden" whileInView="visible" custom={0.4} variants={textVariants}>
+      <motion.h3 className="text-falu text-6xl sm:text-6xl md:text-8xl leading-none font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" initial="hidden" whileInView="visible" custom={0.4} variants={textVariants}>
         {CONTACT_CONTENT.headline}
       </motion.h3>
 
