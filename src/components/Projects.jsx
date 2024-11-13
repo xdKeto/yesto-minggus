@@ -37,7 +37,7 @@ const Projects = () => {
           <motion.div
             key={index}
             className="relative rounded-lg
-                overflow-hidden h-[500px] transition transform"
+                overflow-hidden h-[500px] transition transform will-change-transform"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3,  }}

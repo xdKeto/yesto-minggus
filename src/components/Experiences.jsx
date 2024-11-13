@@ -25,9 +25,9 @@ const Experiences = () => {
         </h2>
         <div className="h-1 w-20 mb-8 bg-charcoal"></div>
 
-        <motion.div className="space-y-10" initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} variants={containerVariants}> 
+        <motion.div className="space-y-10 will-change-transform" initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} variants={containerVariants}> 
             {EXPERIENCES.map((exp, index)=> (
-                <motion.div key={index} variants={childVariants}>
+                <motion.div key={index} variants={childVariants} className="will-change-transform">
                     <div className="flex flex-col md:flex-row md:justify-between">
                         <div className="text-sm font-semibold md:w-1/4 mb-2 md:mb-0 p-4">
                             {exp.yearRange}

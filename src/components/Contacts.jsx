@@ -37,15 +37,15 @@ const Contacts = () => {
       <h2 className="text-charcoal text-4xl md:text-6xl font-medium tracking-tight mb-10">Contact</h2>
       <div className="h-1 w-20 bg-charcoal mb-8"></div>
 
-      <motion.h3 className="text-falu text-6xl sm:text-6xl md:text-8xl leading-none font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" initial="hidden" whileInView="visible" custom={0.4} variants={textVariants}>
+      <motion.h3 className="text-falu text-6xl sm:text-6xl md:text-8xl leading-none font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] will-change-transform" initial="hidden" whileInView="visible" custom={0.4} variants={textVariants}>
         {CONTACT_CONTENT.headline}
       </motion.h3>
 
-      <motion.p className="text-lg md:text-2xl mt-6 max-w-3xl" initial="hidden" whileInView="visible" custom={0.6} variants={textVariants}>
+      <motion.p className="text-lg md:text-2xl mt-6 max-w-3xl will-change-transform" initial="hidden" whileInView="visible" custom={0.6} variants={textVariants}>
         {CONTACT_CONTENT.description}
       </motion.p>
 
-      <motion.a href={`mailto:${CONTACT_CONTENT.email}`} className="text-lg md:text-3xl font-medium mt-8" initial="hidden" whileInView="visible" custom={0.8} variants={textVariants}>
+      <motion.a href={`mailto:${CONTACT_CONTENT.email}`} className="text-lg md:text-3xl font-medium mt-8 will-change-transform" initial="hidden" whileInView="visible" custom={0.8} variants={textVariants}>
         {CONTACT_CONTENT.email}
       </motion.a>
 
@@ -62,14 +62,15 @@ const Contacts = () => {
                     whileInView="visible"
                     custom={1.0 + index * 0.2}
                     variants={iconVariants}
-                    aria-label={link.ariaLabel}>
+                    aria-label={link.ariaLabel}
+                    className="will-change-transform">
                         <Icon size={36}/>
                     </motion.a>
                 )
         })}
       </div>
 
-      <motion.p className="text-sm text-stone-500 mt-36"
+      <motion.p className="text-sm text-stone-500 mt-36 will-change-transform" 
       initial="hidden"
       whileInView="visible"
       custom={1.6}
