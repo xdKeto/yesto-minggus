@@ -33,7 +33,7 @@ export const PROJECTS = [
   },
   {
     name: "Stellaron Raiders",
-    description: "A Space Shooter game my friends and I built in Java for our 2nd-semester final project.",
+    description: "A Space Shooter game my friends and I built for our 2nd-semester final project.",
     image: projects3,
     technologies: ["Java", "Object-Oriented Programming"],
   },
