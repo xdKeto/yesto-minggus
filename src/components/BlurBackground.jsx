@@ -1,13 +1,6 @@
 import { motion } from "framer-motion";
 
 const circleVariants = {
-  animateMobile: {
-    scale: [1, 1.1, 1],
-    x: [0, 50, 0],
-    y: [0, 30, 0],
-    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
-  },
-
   animate1: {
     scale: [1, 1.2, 1],
     x: [0, 100, 0],

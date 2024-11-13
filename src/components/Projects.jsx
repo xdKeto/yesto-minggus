@@ -15,10 +15,10 @@ const Projects = () => {
       rotate: 0,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.3,
         ease: "easeOut",
         type: "spring",
-        bounce: 0.4,
+        bounce: 0.2,
       },
     },
   };
