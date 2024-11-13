@@ -29,7 +29,7 @@ export const PROJECTS = [
     name: "PetraEats",
     description: "A Canteen Website for PCU Students, a final project for a class",
     image: projects2,
-    technologies: ["HTML", "CSS", "Bootstrap", "MySQL"],
+    technologies: ["HTML", "Laravel", "Bootstrap", "MySQL"],
   },
   {
     name: "Stellaron Raiders",
