@@ -27,13 +27,13 @@ export const PROJECTS = [
   },
   {
     name: "PetraEats",
-    description: "A Canteen Website for PCU Students, a final project for a class",
+    description: "A Canteen Website for PCU Students, final project for a class",
     image: projects2,
     technologies: ["HTML", "Laravel", "Bootstrap", "MySQL"],
   },
   {
     name: "Stellaron Raiders",
-    description: "A Space Shooter game my friends and I built for our 2nd-semester final project.",
+    description: "A Space Shooter game my friends and I built for a final project.",
     image: projects3,
     technologies: ["Java", "Object-Oriented Programming"],
   },
@@ -48,7 +48,7 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
-    yearRange: "Aug 2024 — Now",
+    yearRange: "Aug 2024 — Des 2024",
     title: "Project Based Frontend and Mobile Developer at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
     description: [
