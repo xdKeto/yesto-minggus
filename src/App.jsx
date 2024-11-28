@@ -6,10 +6,12 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills"
 import Experiences from "./components/Experiences";
 import Contacts from "./components/Contacts";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <>
+      <Analytics/>
       <BlurBackground />
       <Navbar />
       <main className="antialiased overflow-x-hidden overflow-y-hidden max-w-7xl mx-auto relative z-10">
