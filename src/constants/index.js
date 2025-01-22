@@ -48,7 +48,7 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
-    yearRange: "Aug 2024 — Des 2024",
+    yearRange: "Aug 2024 — Jan 2024",
     title: "Project Based Frontend and Mobile Developer at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
     description: [
