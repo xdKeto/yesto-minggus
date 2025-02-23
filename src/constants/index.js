@@ -61,7 +61,7 @@ export const EXPERIENCES = [
   },
   {
     yearRange: "Jan 2025 — now",
-    title: "Mobile Aplication Developer at Cross Network Indonesia",
+    title: "Mobile Aplication Developer Internship at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
     description: [
       
