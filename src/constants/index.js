@@ -48,7 +48,7 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
-    yearRange: "Aug 2024 — Des 2024",
+    yearRange: "Aug 2024 — Jan 2025",
     title: "Project Based Frontend and Mobile Developer at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
     description: [
@@ -57,6 +57,14 @@ export const EXPERIENCES = [
       "Building high-performance, responsive cross-platform apps with Flutter and Svelte.",
       "Integrating REST API to enhance functionality and ensure a smooth user experience.",
       "Collaborating with a 5-member team to design scalable and sustainable system architecture based on client requirements.",
+    ],
+  },
+  {
+    yearRange: "Jan 2025 — June 2025",
+    title: "Mobile Aplication Developer Intern at Cross Network Indonesia",
+    location: "Surabaya, Indonesia",
+    description: [
+      
     ],
   },
   
