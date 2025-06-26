@@ -40,7 +40,7 @@ const Projects = () => {
                 overflow-hidden h-[500px] transition transform will-change-transform"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3,  }}
+            viewport={{ once: true, amount: 0.3 }}
             variants={projectVariants}
           >
             <img src={project.image} alt={project.name} className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" />

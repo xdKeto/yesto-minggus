@@ -22,7 +22,7 @@ const Skills = () => {
       <h1 className="text-charcoal text-4xl md:text-6xl font-medium tracking-tight mb-10">Tools</h1>
       <div className="h-1 w-20 mb-8 bg-charcoal"></div>
 
-      <motion.div className="flex flex-wrap items-center justify-center gap-4 will-change-transform " initial="hidden" whileInView="visible" variants={textVariants}>
+      <motion.div className="flex flex-wrap items-center justify-center gap-4 will-change-transform " initial="hidden" whileInView="visible" variants={textVariants} viewport={{ once: true, amount: 0.3 }}>
         <div className="flex flex-wrap justify-center gap-4 py-2 px-4 backdrop-blur-3xl bg-coral/20 rounded-lg">
           <div className="py-4 px-3 flex-w-1/5 max-w-[120px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="64.26" height="64" viewBox="0 0 256 255">
