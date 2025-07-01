@@ -12,7 +12,7 @@ const Experiences = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transisiton: {
+      transition: {
         duration: 0.8,
         ease: "easeOut",
       },
