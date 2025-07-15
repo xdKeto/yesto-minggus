@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = (link) => {
+const Button = ({link}) => {
   return (
     <StyledWrapper>
       <a className="animated-button" href={link} target="_blank" rel="noopener noreferrer">
