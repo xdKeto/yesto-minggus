@@ -12,8 +12,7 @@ export const LINKS = [
 
 export const HERO_CONTENT = {
   greeting: "Hey there! 🖐️",
-  introduction:
-    "Fullstack developer crafting immersive, user-friendly web and mobile experiences.",
+  introduction: "Fullstack developer crafting immersive, user-friendly web and mobile experiences.",
   resumeLinkText: "Download Resume",
   resumeLink: "/resume.pdf",
 };
@@ -24,18 +23,21 @@ export const PROJECTS = [
     description: "A Learning Management System for Catholic Church",
     image: projects1,
     technologies: ["Svelte", "Flutter", "REST API", "Figma"],
+    link: "https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link",
   },
   {
     name: "PetraEats",
     description: "A Canteen Website for PCU Students, final project for a class",
     image: projects2,
     technologies: ["HTML", "Laravel", "Bootstrap", "MySQL"],
+    link: "https://coolors.co",
   },
   {
     name: "Stellaron Raiders",
     description: "A Space Shooter game my friends and I built for a final project.",
     image: projects3,
     technologies: ["Java", "Object-Oriented Programming"],
+    link: "https://github.com/xdKeto/StellaronRaiders",
   },
 
   {
@@ -43,6 +45,7 @@ export const PROJECTS = [
     description: "Personal portfolio website",
     image: projects4,
     technologies: ["React", "Tailwind"],
+    link: "https://yesto.vercel.app",
   },
 ];
 
@@ -63,17 +66,13 @@ export const EXPERIENCES = [
     yearRange: "Jan 2025 — June 2025",
     title: "Mobile Aplication Developer Intern at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
-    description: [
-      
-    ],
+    description: [],
   },
-  
 ];
 
 export const CONTACT_CONTENT = {
   headline: "IGNITE YOUR IDEAS.",
-  description:
-    "I'm committed to working on impactful projects that push creative and innovative boundaries. Let's create something exceptional together.",
+  description: "I'm committed to working on impactful projects that push creative and innovative boundaries. Let's create something exceptional together.",
   email: "yestoya.lumenchristo@gmail.com",
   socialLinks: [
     {

@@ -34,14 +34,27 @@ const Hero = () => {
           <motion.h1 className="text-charcoal drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.6)] font-bold text-4xl md:text-5xl lg:text-6xl my-2 md:my-4 will-change-transform" variants={textVariants}>
             I'm Yestoya,
           </motion.h1>
-          <motion.p className="text-xl text-black
-           md:text-2xl lg:text-4xl lg:mb-6 md:mb-4 will-change-transform" variants={textVariants}>
+          <motion.p
+            className="text-xl text-black
+           md:text-2xl lg:text-4xl lg:mb-6 md:mb-4 will-change-transform"
+            variants={textVariants}
+          >
             {HERO_CONTENT.introduction}
           </motion.p>
           <motion.p className="text-xl text-black md:text-2xl lg:text-4xl will-change-transform" variants={textVariants}>
-            currently studying Computer Science at <a href="https://www.petra.ac.id" className="text-sienna font-semibold drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.5)]">Petra Christian University</a>
+            currently studying Computer Science at{" "}
+            <a href="https://www.petra.ac.id" className="text-sienna font-semibold drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.5)]">
+              Petra Christian University
+            </a>
           </motion.p>
-          <motion.a className="bg-white font-semibold text-black p-3 lg:p-4 mt-4 md:mt-8 inline-block rounded-2xl will-change-transform" href={HERO_CONTENT.resumeLink} download rel="noopener noreferrer" target="_blank" variants={textVariants}>
+          <motion.a
+            className="bg-white font-semibold text-black p-3 lg:p-4 mt-4 md:mt-8 inline-block rounded-2xl will-change-transform"
+            href={HERO_CONTENT.resumeLink}
+            download
+            rel="noopener noreferrer"
+            target="_blank"
+            variants={textVariants}
+          >
             {HERO_CONTENT.resumeLinkText}
           </motion.a>
         </motion.div>
