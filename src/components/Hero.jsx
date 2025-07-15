@@ -60,7 +60,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div className="w-full md:w-1/2 px-8 py-4 will-change-transform" initial="hidden" animate="visible" variants={imageVariants}>
-          <img src={jason} width={650} height={650} className="rounded-3xl" alt="Hero Image" />
+          <img src={jason} width={500} height={500} className="rounded-3xl" alt="Hero Image" />
         </motion.div>
       </div>
     </section>

@@ -2,6 +2,9 @@ import projects1 from "../assets/projects1.png";
 import projects2 from "../assets/projects2.png";
 import projects3 from "../assets/projects3.png";
 import projects4 from "../assets/projects4.png";
+import projectYFM from "../assets/project_yfm.png";
+import projectNARA from "../assets/project_nara.png";
+import projectLEAP from "../assets/project_leap.png";
 
 export const LINKS = [
   { href: "#projects", label: "Projects" },
@@ -19,25 +22,46 @@ export const HERO_CONTENT = {
 
 export const PROJECTS = [
   {
+    name: "Poliklinik Hospitel Bantarangin",
+    description: "Mobile and Web application for clinic administration and screening systems.",
+    image: projectLEAP,
+    technologies: ["Flutter", "REST API", "WebSocket", "Figma"],
+    link: "",
+  },
+  {
     name: "Sentra Evangelisasi Pribadi",
     description: "A Learning Management System for Catholic Church",
     image: projects1,
     technologies: ["Svelte", "Flutter", "REST API", "Figma"],
-    link: "https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link",
+    link: "",
   },
   {
     name: "PetraEats",
     description: "A Canteen Website for PCU Students, final project for a class",
     image: projects2,
     technologies: ["HTML", "Laravel", "Bootstrap", "MySQL"],
-    link: "https://coolors.co",
+    link: "",
   },
   {
     name: "Stellaron Raiders",
-    description: "A Space Shooter game my friends and I built for a final project.",
+    description: "A Space Shooter game for a final group project.",
     image: projects3,
     technologies: ["Java", "Object-Oriented Programming"],
     link: "https://github.com/xdKeto/StellaronRaiders",
+  },
+  {
+    name: "Narasatya Portfolio",
+    description: "Portfolio website for 3D Artist, Narasatya",
+    image: projectNARA,
+    technologies: ["React", "Tailwind"],
+    link: "https://narasatya.vercel.app",
+  },
+  {
+    name: "Youth Festival Month 2025",
+    description: "Website for a Church event",
+    image: projectYFM,
+    technologies: ["React", "Tailwind"],
+    link: "https://yfm25.vercel.app",
   },
 
   {
@@ -45,7 +69,7 @@ export const PROJECTS = [
     description: "Personal portfolio website",
     image: projects4,
     technologies: ["React", "Tailwind"],
-    link: "https://yesto.vercel.app",
+    link: "",
   },
 ];
 
@@ -66,7 +90,13 @@ export const EXPERIENCES = [
     yearRange: "Jan 2025 — June 2025",
     title: "Mobile Aplication Developer Intern at Cross Network Indonesia",
     location: "Surabaya, Indonesia",
-    description: [],
+    description: [
+      "Designing and developing frontend interfaces for clinic admin and nurse apps using Flutter.",
+      "Integrating REST APIs and WebSocket for real-time data flow and secure user sessions.",
+      "Building responsive UI components and implementing features like patient registration, queue management, and screening input.",
+      "Collaborating with UI/UX designers and backend developers to ensure seamless system integration.",
+      "Conducting feature testing and iterations based on user feedback and project requirements.",
+    ],
   },
 ];
 
