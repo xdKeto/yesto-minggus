@@ -16,7 +16,7 @@ const springValues = {
   mass: 2,
 };
 
-const ProjectCard = ({ project, projectVariants, link = "" }) => {
+const ProjectCard = ({ project, link =""}) => {
   // --- Hover effect state ---
   const ref = useRef(null);
   const rotateX = useSpring(useMotionValue(0), springValues);
@@ -72,10 +72,10 @@ const ProjectCard = ({ project, projectVariants, link = "" }) => {
         <div className="relative z-20 p-6 flex flex-col justify-between h-full bg-black/20 text-white">
           <h2 className="text-3xl font-bold mb-4">{project.name}</h2>
           <div className="flex flex-col justify-between">
-            <p className="mb-2 flex-grow text-lg font-semibold">{project.description}</p>
+            <p className="mb-2 flex-grow text-sm md:text-lg font-semibold">{project.description}</p>
             <div className="flex flex-row flex-wrap">
               {project.technologies.map((tech, index) => (
-                <span className="mr-2 mb-3 rounded bg-stone-900/70 p-2 text-sm font-medium text-stone-200" key={index}>
+                <span className="mr-2 mb-3 rounded bg-stone-900/70 p-2 text-xs md:text-sm font-medium text-stone-200" key={index}>
                   {tech}
                 </span>
               ))}

@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { CONTACT_CONTENT } from "../constants";
-import { RiGithubFill, RiLinkedinFill, RiTwitterXFill } from "react-icons/ri";
-import { FaTwitter } from "react-icons/fa6";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FaGithub, FaInstagram,  } from "react-icons/fa";
+import { FiLinkedin, } from "react-icons/fi";
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },

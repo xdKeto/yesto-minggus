@@ -1,5 +1,4 @@
 import BlurBackground from "./components/BlurBackground";
-import ErrorBoundary from "./components/ErrorBoundary";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
