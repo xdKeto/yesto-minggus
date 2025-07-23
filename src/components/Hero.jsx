@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import jason from "../assets/yesto.jpg";
 import { HERO_CONTENT } from "../constants";
 
+import DownloadButton from "./DownloadButton";
+
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -47,16 +49,9 @@ const Hero = () => {
               Petra Christian University
             </a>
           </motion.p>
-          <motion.a
-            className="bg-white font-semibold text-black p-3 lg:p-4 mt-4 md:mt-8 inline-block rounded-2xl will-change-transform"
-            href={HERO_CONTENT.resumeLink}
-            download
-            rel="noopener noreferrer"
-            target="_blank"
-            variants={textVariants}
-          >
-            {HERO_CONTENT.resumeLinkText}
-          </motion.a>
+          <motion.div variants={textVariants} className="mt-4 md:mt-8">
+            <DownloadButton>Download CV</DownloadButton>
+          </motion.div>
         </motion.div>
 
         <motion.div className="w-full md:w-1/2 px-8 py-4 will-change-transform" initial="hidden" animate="visible" variants={imageVariants}>
