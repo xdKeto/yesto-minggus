@@ -4,7 +4,7 @@ import styled from "styled-components";
 const DownloadButton = ({ children }) => {
   return (
     <StyledWrapper>
-      <a href="/resume.pdf" download>
+      <a href="/resume.pdf" download className="inline-block">
         <button className="button" type="button">
           <span className="button__text">{children}</span>
           <span className="button__icon">

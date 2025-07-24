@@ -49,7 +49,7 @@ const Hero = () => {
               Petra Christian University
             </a>
           </motion.p>
-          <motion.div variants={textVariants} className="mt-4 md:mt-8">
+          <motion.div variants={textVariants} className="mt-4 md:mt-8 md:py-6">
             <DownloadButton>Download CV</DownloadButton>
           </motion.div>
         </motion.div>
