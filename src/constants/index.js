@@ -5,6 +5,7 @@ import projects4 from "../assets/projects4.png";
 import projectYFM from "../assets/project_yfm.png";
 import projectNARA from "../assets/project_nara.png";
 import projectLEAP from "../assets/project_leap.png";
+import projectCABLE from "../assets/project_cable.png";
 
 export const LINKS = [
   { href: "#projects", label: "Projects" },
@@ -50,10 +51,17 @@ export const PROJECTS = [
     link: "https://github.com/xdKeto/StellaronRaiders",
   },
   {
+    name: "cableguitar.com",
+    description: "Product showcase for a cable guitar provider from Surabaya",
+    image: projectCABLE,
+    technologies: ["React", "Tailwind", "Headless CMS"],
+    link: "https://cableguitar.com",
+  },
+  {
     name: "Narasatya Portfolio",
     description: "Portfolio website for 3D Artist, Narasatya",
     image: projectNARA,
-    technologies: ["React", "Tailwind"],
+    technologies: ["React", "Tailwind", 'Headless CMS'],
     link: "https://narasatya.vercel.app",
   },
   {
