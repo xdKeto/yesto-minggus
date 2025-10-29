@@ -43,7 +43,7 @@ const Hero = () => {
           >
             {HERO_CONTENT.introduction}
           </motion.p>
-          <motion.p className="text-xl text-black md:text-2xl lg:text-4xl will-change-transform" variants={textVariants}>
+          <motion.p className="text-lg text-black md:text-xl will-change-transform" variants={textVariants}>
             currently studying Computer Science at{" "}
             <a href="https://www.petra.ac.id" className="text-sienna font-semibold drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.5)]">
               Petra Christian University
