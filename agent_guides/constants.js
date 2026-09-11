@@ -44,13 +44,13 @@ export const PROFILE = {
   fullName: 'Yestoya',
   role: 'Software Engineer',
   tagline: 'crafting immersive, user-friendly experiences',
-  bigTagline: 'Build with Code and Curiosity', // tile filler besar di Home
+  bigTagline: 'Build with Code and Curiosity', 
   status: 'Open to Work',
-  statusActive: true, // toggle ini kalau status berubah, indikator titik ikut berubah warna
+  statusActive: true, 
   location: 'Surabaya, Indonesia',
-  timezone: 'Asia/Jakarta', // buat tile jam WIB live
+  timezone: 'Asia/Jakarta', 
   email: 'yestoya.lumenchristo@gmail.com',
-  photo: 'profile-photo.jpg', // TODO: nama file foto profil (versi warna + duotone, lihat design_md.txt §9)
+  photo: 'yesto.png',
 };
 
 export const EDUCATION = {
@@ -60,22 +60,22 @@ export const EDUCATION = {
 };
 
 export const SOCIALS = [
-  { platform: 'GitHub', url: '', icon: 'icon-github.svg' }, // TODO: isi URL profil GitHub
-  { platform: 'LinkedIn', url: '', icon: 'icon-linkedin.svg', label: 'Connect with me!' }, // TODO: isi URL LinkedIn
+  { platform: 'GitHub', url: 'https://github.com/xdKeto', icon: 'icon-github.svg' },
+  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/yesto-minggus/', icon: 'icon-linkedin.svg', label: 'Connect with me!' },
 ];
 
-export const GITHUB_USERNAME = ''; // TODO: dipakai buat fetch contribution graph + link "Open GitHub" di Projects
+export const GITHUB_USERNAME = 'xdKeto';
 
 export const CTA_DOWNLOAD_CV = {
   label: 'Download CV',
-  file: 'cv-yestoya.pdf', // TODO: taruh file CV-nya di /public lalu update path ini
+  file: 'resume.pdf',
 };
 
 export const NAV_TILES = [
   { id: 'projects', label: 'PROJECTS', color: 'sienna', behavior: 'navigate' },
   { id: 'skills', label: 'SKILLS & TOOLS', color: 'charcoal', behavior: 'expand-in-place' },
-  { id: 'experience', label: 'EXPERIENCE', color: 'coral', behavior: 'navigate' },
-  { id: 'contact', label: 'CONTACT', color: 'falu', behavior: 'expand-in-place' },
+  { id: 'experience', label: 'EXPERIENCE', color: 'coralDark', behavior: 'navigate' },
+  { id: 'contact', label: 'CONTACT', color: 'faluLight', behavior: 'expand-in-place' },
 ];
 
 // ---------------------------------------------------------------------------
@@ -83,19 +83,19 @@ export const NAV_TILES = [
 // ---------------------------------------------------------------------------
 
 export const SKILLS = [
-  { name: 'Python', icon: 'skill-python.svg', category: 'language' },
-  { name: 'JavaScript', icon: 'skill-js.svg', category: 'language' },
-  { name: 'TypeScript', icon: 'skill-ts.svg', category: 'language' },
-  { name: 'React', icon: 'skill-react.svg', category: 'framework' },
-  { name: 'Next.js', icon: 'skill-nextjs.svg', category: 'framework' },
-  { name: 'PHP', icon: 'skill-php.svg', category: 'language' },
-  { name: 'Laravel', icon: 'skill-laravel.svg', category: 'framework' }, // confirmed via Figma layer name "laravel"
-  { name: 'Dart', icon: 'skill-dart.svg', category: 'language' }, // confirmed via Figma layer name "dart"
-  { name: 'Flutter', icon: 'skill-flutter.svg', category: 'mobile' },
-  { name: 'Kotlin', icon: 'skill-kotlin.svg', category: 'mobile' },
-  { name: 'SQL', icon: 'skill-sql.svg', category: 'database' },
-  { name: 'VS Code', icon: 'skill-vscode.svg', category: 'tool' },
-  { name: 'Figma', icon: 'skill-figma.svg', category: 'tool' },
+  { name: 'Python', icon: 'python.svg', category: 'language' },
+  { name: 'JavaScript', icon: 'javascript.svg', category: 'language' },
+  { name: 'TypeScript', icon: 'typescript.svg', category: 'language' },
+  { name: 'React', icon: 'react.svg', category: 'framework' },
+  { name: 'Next.js', icon: 'nextjs.svg', category: 'framework' },
+  { name: 'PHP', icon: 'php.svg', category: 'language' },
+  { name: 'Laravel', icon: 'laravel.svg', category: 'framework' }, 
+  { name: 'Dart', icon: 'dart.svg', category: 'language' }, 
+  { name: 'Flutter', icon: 'flutter.svg', category: 'mobile' },
+  { name: 'Kotlin', icon: 'kotlin.svg', category: 'mobile' },
+  { name: 'SQL', icon: 'sql.svg', category: 'database' },
+  { name: 'VS Code', icon: 'vscode.svg', category: 'tool' },
+  { name: 'Figma', icon: 'figma.svg', category: 'tool' },
 ];
 
 export const UNRELATED_SKILLS = [
@@ -122,13 +122,52 @@ export const PROJECTS = [
     name: 'Poliklinik Hospitel Bantarangin',
     category: 'MOBILE',
     tags: ['Flutter', 'Mobile'],
-    featured: false, // TODO: tentukan 4 project featured (wide tile) — lihat DESIGN-SYSTEM.md §9.5
+    featured: true, 
     themeColor: '#2E7D5B',
-    cover: 'project-poliklinik-cover.png', // TODO: cover asli, rasio 1:1 (square) / 2:1 (wide)
-    description: '', // TODO
-    details: [], // TODO: bullet poin "Project Details"
-    media: [], // TODO: nama file untuk carousel media project
-    cta: { label: 'Visit', url: '' }, // TODO
+    cover: 'projects/project_leap.png', 
+    description: 'A Mobile and Web application for clinic administration and screening systems. Implementing REST APIs and Websocket for real-time data and secure sessions. Collaborated with a 5-member team, conducted feature testing, and improved based on feedback. A part of 6 month university LEAP internship program. \n\n Data that is shown in the media section is mock up data.',
+    details: ["Flutter as frontend framework", "Websocket for real-time data", "Postman for API testing", "Figma for design"], // TODO: bullet poin "Project Details"
+    media: "projects/poliklinik/**", // pull every image or video inside this directory 
+    cta: { label: '', url: '' },
+  },
+  {
+    id: 'sentra-evangelisasi-pribadi',
+    name: 'Sentra Evangelisasi Pribadi',
+    category: 'MOBILE',
+    tags: ['Flutter', 'Mobile'],
+    featured: true,
+    themeColor: '#B08947',
+    cover: 'projects/project_manpro.png',
+    description: 'A client specific Learning Management System for a Catholic Organization, from mapping features to UI/UX design. Built responsive, high-performance apps using Flutter and Svelte. Collaborated with a 5-member team to ensure continuous and smooth development based on client needs and feedback.',
+    details: ["Flutter as mobile framework", "Svelte as web framework", "Postman for API testing", "Figma for design"],
+    media: "projects/sep/**",
+    cta: { label: '', url: '' },
+  },
+  {
+    id: 'jam-sync', 
+    name: 'JamSync',
+    category: 'MOBILE',
+    tags: ['Flutter', 'Mobile'],
+    featured: true,
+    themeColor: '#0B0B14',
+    cover: 'projects/project_skripsi.png',
+    description: 'A real-time collaborative jam session app that lets musicians sync tempo, chord progressions, and song sections across devices, so everyone stays in sync. Using NTP calculation in each devices to synchronize with each other, which works even offline while playback starts. A part of Final Project/Thesis for university.',
+    details: ["Flutter as mobile framework", "NTP for time synchronization", "Firebase for database"],
+    media: "projects/jam_sync/**",
+    cta: { label: 'Demo Video', url: '' }, 
+  },
+  {
+    id: 'stellaron-raiders', 
+    name: 'Stellaron Raiders',
+    category: 'PERSONAL',
+    tags: ['Java', 'JavaFX'],
+    featured: true,
+    themeColor: '#0B0B14',
+    cover: 'projects/project_stellaron.png',
+    description: 'A 2D plane-shooter game made in Java, implementing OOP, integrating sprite animations, and game principles. A part of a Final Project for a subject in University.',
+    details: ["JavaFX for game engine", "Sprite animations for assets"],
+    media: "projects/oop/**",
+    cta: { label: 'Open Github', url: 'https://github.com/xdKeto/StellaronRaiders' }, 
   },
   {
     id: 'guitarcable',
@@ -137,50 +176,24 @@ export const PROJECTS = [
     tags: ['Next.js', 'Web'],
     featured: false,
     themeColor: '#B03A2E',
-    cover: 'project-guitarcable-cover.png',
-    description: '',
-    details: [],
-    media: [],
+    cover: 'projects/project_cable.png',
+    description: 'A product showcase website for a guitar cable provider from Surabaya, Indonesia',
+    details: ["Using NextJS as web framework", "Supabase for database", "Figma for design"],
+    media: "projects/cable/**",
     cta: { label: 'Visit', url: 'https://cableguitar.com' },
   },
   {
     id: 'narasatya-portfolio',
     name: 'Narasatya Portfolio',
     category: 'WEB',
-    tags: ['Next.js', 'Web'],
+    tags: ['React', 'Web'],
     featured: false,
     themeColor: '#0B0B0B',
-    cover: 'project-narasatya-cover.png',
-    description: '',
-    details: [],
-    media: [],
-    cta: { label: 'Visit', url: '' }, // TODO
-  },
-  {
-    id: 'sentra-evangelisasi-pribadi',
-    name: 'Sentra Evangelisasi Pribadi',
-    category: 'MOBILE',
-    tags: ['Flutter', 'Mobile'],
-    featured: false,
-    themeColor: '#B08947',
-    cover: 'project-sentra-cover.png',
-    description: '',
-    details: [],
-    media: [],
-    cta: { label: 'Visit', url: '' }, // TODO
-  },
-  {
-    id: 'steallron-raiders', // ⚠️ TODO: cek ejaan — design_md.txt bilang "Stellaron Raiders", screenshot bilang "Steallron Raiders"
-    name: 'Steallron Raiders',
-    category: 'PERSONAL',
-    tags: ['Java', 'Personal'],
-    featured: false,
-    themeColor: '#0B0B14',
-    cover: 'project-steallron-cover.png',
-    description: '',
-    details: [],
-    media: [],
-    cta: { label: 'Visit', url: '' }, // TODO
+    cover: 'projects/project_nara.png',
+    description: 'A portfolio website for Narasatya, 3D Artist from Surabaya Indonesia',
+    details: ["React as web framework", "Figma for design"],
+    media: "projects/nara/**",
+    cta: { label: 'Visit', url: 'https://narasatya.vercel.app' }, 
   },
   {
     id: 'youth-festival-month',
@@ -189,24 +202,50 @@ export const PROJECTS = [
     tags: ['React', 'Web'],
     featured: false,
     themeColor: '#5B3AA6',
-    cover: 'project-yfm-cover.png',
-    description: '',
-    details: [],
-    media: [],
-    cta: { label: 'Visit', url: '' }, // TODO
+    cover: 'projects/project_yfm.png',
+    description: 'A promo website for Youth Festival Month 2025, for a local church event.',
+    details: ["React as web framework", "Figma for design"],
+    media: "projects/yfm/**",
+    cta: { label: 'Visit', url: 'https://yfm-2025.vercel.app' }, 
+  },
+  {
+    id: 'youth-society-pti',
+    name: 'Youth Society GKI PTI',
+    category: 'WEB',
+    tags: ['React', 'Web'],
+    featured: false,
+    themeColor: '#189DA9',
+    cover: 'projects/project_yfm.png',
+    description: 'A profile website for Youth Society GKI PTI, for a local church youth society.',
+    details: ["React as web framework", "Figma for design"],
+    media: "projects/youth/**",
+    cta: { label: 'Visit', url: 'https://youth-society-pti.vercel.app' }, 
+  },
+  {
+    id: 'pti-jeopardy',
+    name: 'PTI Jeopardy',
+    category: 'Personal',
+    tags: ['React', 'Web'],
+    featured: false,
+    themeColor: '#189DA9',
+    cover: 'projects/project_yfm.png',
+    description: 'A jeopardy-like quiz for a church event.',
+    details: ["React as web framework", "Figma for design"],
+    media: "projects/jeopardy/**",
+    cta: { label: 'Visit', url: 'https://youth-pti-jeopardy.vercel.app' }, 
   },
   {
     id: 'petraeats',
     name: 'PetraEats',
-    category: 'WEB',
+    category: 'PERSONAL',
     tags: ['Laravel', 'Web'],
     featured: false,
     themeColor: '#2255A4',
-    cover: 'project-petraeats-cover.png',
-    description: '',
-    details: [],
-    media: [],
-    cta: { label: 'Visit', url: '' }, // TODO
+    cover: 'projects/project_petraeats.png',
+    description: 'A food ordering platform for Petra Christian University community. A part of ',
+    details: ["Laravel as web framework", "Figma for design"],
+    media: "projects/petraeats/**",
+    cta: { label: 'Open Github', url: '' }, 
   },
   {
     id: 'personal-portfolio',
@@ -215,10 +254,10 @@ export const PROJECTS = [
     tags: ['React', 'Personal'],
     featured: false,
     themeColor: '#C9BFA0',
-    cover: 'project-oldportfolio-cover.png',
-    description: '',
-    details: [],
-    media: [],
+    cover: 'projects/project_porto.png',
+    description: 'My personal portfolio website.',
+    details: ["React as web framework", "Figma for design"],
+    media: "You're here!",
     cta: { label: 'Visit', url: 'https://yesto.vercel.app' },
   },
 ];
@@ -238,17 +277,40 @@ export const EXPERIENCE = [
     id: 'exp-1',
     role: 'Project Based Frontend & Mobile Developer',
     company: 'Cross Network Indonesia',
-    period: 'Jan 2025 — Jun 2025',
+    period: 'Aug 2024 — Jan 2025',
     bullets: [
-      'Building a client LMS with comprehensive UX mapping.',
-      'Developing cross-platform applications utilizing Flutter and Svelte.',
-      'Integrating secure and scalable REST APIs for data synchronization.',
+      'Developing a client-specific LMS, including user needs analysis and feature mapping.',
+      'Designing UI/UX for intuitive navigation and improved user experience.',
+      'Building high-performance, responsive cross-platform apps with Flutter and Svelte.',
+      'Integrating REST API to enhance functionality and ensure a smooth user experience.',
+      'Collaborating with a 5-member team to design scalable and sustainable system architecture based on client requirements.',
     ],
   },
-  // ⚠️ TODO: screenshot Experience menampilkan 3 entri IDENTIK (placeholder sama persis,
-  // tanggal & bullet sama). Konfirmasi: ini satu role yang di-dedupe jadi 1 entri,
-  // atau ada beberapa role berbeda di Cross Network Indonesia yang belum diisi?
-  // Kalau memang ada role lain, tambahkan objek baru di array ini dengan pola yang sama.
+  {
+    id: 'exp-2',
+    role: 'Mobile Application Developer Intern',
+    company: 'Cross Network Indonesia',
+    period: 'Jan 2025 — June 2025',
+    bullets: [
+      'Designing and developing frontend interfaces for clinic admin and nurse apps using Flutter.',
+      'Integrating REST APIs and WebSocket for real-time data flow and secure user sessions.',
+      'Building responsive UI components and implementing features like patient registration, queue management, and screening input.',
+      'Collaborating with UI/UX designers and backend developers to ensure seamless system integration.',
+      'Conducting feature testing and iterations based on user feedback and project requirements.',
+    ],
+  },
+  {
+    id: 'exp-3',
+    role: 'Freelance Web Developer',
+    company: 'Self-employed',
+    period: 'Aug 2025 - Present',
+    bullets: [
+      'Built responsive, high-performance web applications as a Freelance Web Developer using Next.js, Laravel, Tailwind CSS, and REST APIs.',
+      'Delivered end-to-end projects tailored to specific client needs, including an e-commerce platform for cableguitar.com, a portfolio site for 3D artist Narasatya, and an internal management app for an event organizer.',
+      'Focused on clean, scalable code and reliable solutions that align directly with client goals and operational requirements.',
+    ],
+  },
+
 ];
 
 export const UNRELATED_EXPERIENCE = [
@@ -264,7 +326,7 @@ export const EXPERIENCE_QUOTE = 'STILL LEARNING, ALWAYS SHIPPING';
 export const EXPERIENCE_CAROUSEL_DEFAULTS = {
   autoScroll: true,
   reverse: false,
-  speed: 'normal', // TODO: tentukan skala pasti (slow/normal/fast -> px per detik, atau angka lain)
+  speed: 'normal', 
 };
 
 // ---------------------------------------------------------------------------
@@ -275,13 +337,14 @@ export const MODES = {
   puzzle: {
     label: 'Puzzle Mode',
     scope: 'home-only',
-    notifyOnEnable: 'Puzzle mode aktif — geser tile untuk mengatur ulang', // teks notifikasi saat ON
-    persistOrderOnDisable: false, // TODO: true kalau urutan mau tetap tersimpan saat mode OFF
+    notifyOnEnable: 'Puzzle mode - all components is now draggable!', 
+    persistOrderOnDisable: false, 
   },
   fun: {
     label: 'Fun Mode',
-    scope: 'global', // ⚠️ TODO: konfirmasi — tile ini juga muncul di panel Settings board Experience, apakah toggle yang sama?
+    scope: 'home-only',
+    // notifyOnEnable: 'Fun mode - ', 
     respectReducedMotion: true,
   },
-  mutuallyExclusive: true, // Puzzle Mode & Fun Mode disarankan tidak aktif bersamaan (lihat INTERACTION-SPEC.md §1.7)
+  mutuallyExclusive: true, 
 };
