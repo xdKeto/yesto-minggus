@@ -1,0 +1,7 @@
+import Tile from '../common/Tile';
+
+export default function SettingsPanel({ paused, setPaused, speed, setSpeed, reverse, setReverse, fun, setFun }) {
+  const itemClass = 'block w-full text-left text-xl transition hover:text-lemon focus:outline-none focus:ring-2 focus:ring-paper';
+  return <Tile color="#942911" className="p-4 text-paper"><h2 className="mb-6 text-3xl">Settings:</h2><div className="space-y-4"><button type="button" onClick={() => setPaused((value) => !value)} aria-pressed={paused} className={itemClass}>{paused ? 'Resume Carousel' : 'Stop Carousel'}</button><div><span className="block text-xl">Carousel Speed</span><div className="mt-2 flex gap-5 font-mono text-lg"><button type="button" onClick={() => setSpeed('slow')} className={`${itemClass} w-auto ${speed === 'slow' ? 'text-lemon' : ''}`}>0.5x</button><button type="button" onClick={() => setSpeed('normal')} className={`${itemClass} w-auto ${speed === 'normal' ? 'text-lemon' : ''}`}>1x</button><button type="button" onClick={() => setSpeed('fast')} className={`${itemClass} w-auto ${speed === 'fast' ? 'text-lemon' : ''}`}>2x</button></div></div><button type="button" onClick={() => setReverse((value) => !value)} aria-pressed={reverse} className={itemClass}>Reverse{reverse ? ': Upwards' : ''}</button><button type="button" onClick={() => setFun((value) => !value)} aria-pressed={fun} className={itemClass}>Fun Mode{fun ? ': On' : ''}</button></div></Tile>;
+}
+
