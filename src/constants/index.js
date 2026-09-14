@@ -7,6 +7,7 @@ import projectNARA from "../assets/project_nara.png";
 import projectLEAP from "../assets/project_leap.png";
 import projectCABLE from "../assets/project_cable.png";
 import projectSKRIPSI from "../assets/project_skripsi.png";
+import projectPTI from "../assets/project_pti.png";
 
 export const LINKS = [
   { href: "#projects", label: "Projects" },
@@ -75,7 +76,7 @@ export const PROJECTS = [
   {
     name: "Youth Society GKI PTI",
     description: "A profile website for Youth Society GKI PTI, for a local church youth society.",
-    image: projectYFM,
+    image: projectPTI,
     technologies: ["React", "Tailwind", "Figma"],
     link: "https://youth-society-pti.vercel.app",
   },
