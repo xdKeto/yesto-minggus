@@ -25,8 +25,8 @@ export const HERO_CONTENT = {
 export const PROJECTS = [
   {
     name: "JamSync",
-    description: "A real-time collaborative jam session app that lets musicians stay in sync with each other. A part of Final Project/Thesis for university.",
-    image: projectLEAP,
+    description: "A real-time collaborative jam session for musicians. A part of Final Project/Thesis for university.",
+    image: projectSKRIPSI,
     technologies: ["Flutter", "Realtime", "Firebase"],
     link: "",
   },
