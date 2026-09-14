@@ -6,6 +6,7 @@ import projectYFM from "../assets/project_yfm.png";
 import projectNARA from "../assets/project_nara.png";
 import projectLEAP from "../assets/project_leap.png";
 import projectCABLE from "../assets/project_cable.png";
+import projectSKRIPSI from "../assets/project_skripsi.png";
 
 export const LINKS = [
   { href: "#projects", label: "Projects" },
@@ -22,6 +23,13 @@ export const HERO_CONTENT = {
 };
 
 export const PROJECTS = [
+  {
+    name: "JamSync",
+    description: "A real-time collaborative jam session app that lets musicians stay in sync with each other. A part of Final Project/Thesis for university.",
+    image: projectLEAP,
+    technologies: ["Flutter", "Realtime", "Firebase"],
+    link: "",
+  },
   {
     name: "Poliklinik Hospitel Bantarangin",
     description: "Mobile and Web application for clinic administration and screening systems.",
@@ -65,13 +73,19 @@ export const PROJECTS = [
     link: "https://narasatya.vercel.app",
   },
   {
+    name: "Youth Society GKI PTI",
+    description: "A profile website for Youth Society GKI PTI, for a local church youth society.",
+    image: projectYFM,
+    technologies: ["React", "Tailwind", "Figma"],
+    link: "https://youth-society-pti.vercel.app",
+  },
+  {
     name: "Youth Festival Month 2025",
     description: "Website for a Church event",
     image: projectYFM,
     technologies: ["React", "Tailwind"],
     link: "https://yfm25.vercel.app",
   },
-
   {
     name: "Portfolio Website",
     description: "Personal portfolio website",
