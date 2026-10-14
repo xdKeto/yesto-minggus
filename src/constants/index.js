@@ -121,6 +121,16 @@ export const EXPERIENCES = [
       "Conducting feature testing and iterations based on user feedback and project requirements.",
     ],
   },
+  {
+    yearRange: "Aug 2025 — Now",
+    title: "Freelance Web Developer",
+    location: "Surabaya, Indonesia",
+    description: [
+      "Built responsive, high-performance web applications as a Freelance Web Developer using Next.js, Laravel, Tailwind CSS, and REST APIs",
+      "Delivered end-to-end projects tailored to specific client needs, including an e-commerce platform for cableguitar.com, a portfolio site for 3D artist Narasatya, and an internal management app for an event organizer",
+      "Focused on clean, scalable code and reliable solutions that align directly with client goals and operational requirements",
+    ],
+  },
 ];
 
 export const CONTACT_CONTENT = {
